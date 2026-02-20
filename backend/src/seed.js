@@ -38,6 +38,61 @@ const experts = [
       { date: '2026-02-22', slots: ['08:30 AM', '11:30 AM', '02:00 PM'] },
       { date: '2026-02-24', slots: ['09:00 AM', '12:00 PM', '03:30 PM'] }
     ]
+  },
+  {
+    name: 'Arnab Tripathy',
+    category: 'Software Architecture',
+    experience: 3,
+    rating: 4.2,
+    bio: 'Focuses on backend performance and clean architecture for MERN systems.',
+    availableSlots: [
+      { date: '2026-02-25', slots: ['09:30 AM', '11:00 AM', '04:30 PM'] },
+      { date: '2026-02-26', slots: ['10:30 AM', '01:00 PM', '05:00 PM'] }
+    ]
+  },
+  {
+    name: 'Amitav Panda',
+    category: 'Software Architecture',
+    experience: 4,
+    rating: 4.5,
+    bio: 'Works on reliable API design and modular architecture patterns.',
+    availableSlots: [
+      { date: '2026-02-25', slots: ['10:00 AM', '12:30 PM', '03:00 PM'] },
+      { date: '2026-02-27', slots: ['09:00 AM', '02:00 PM', '06:00 PM'] }
+    ]
+  },
+  {
+    name: 'Venugopal Swamy',
+    category: 'Product Manager',
+    experience: 7,
+    rating: 4.0,
+    bio: 'Helps product teams align strategy, discovery, and delivery outcomes.',
+    availableSlots: [
+      { date: '2026-02-26', slots: ['08:30 AM', '11:30 AM', '02:30 PM'] },
+      { date: '2026-02-28', slots: ['09:30 AM', '01:30 PM', '04:00 PM'] }
+    ]
+  },
+  {
+    name: 'Birbal Das',
+    category: 'Career Coaching',
+    experience: 5,
+    rating: 4.6,
+    bio: 'Guides early and mid-career professionals through career pivots.',
+    availableSlots: [
+      { date: '2026-03-01', slots: ['09:00 AM', '11:00 AM', '03:00 PM'] },
+      { date: '2026-03-02', slots: ['10:00 AM', '01:00 PM', '05:00 PM'] }
+    ]
+  },
+  {
+    name: 'Senapati Chand',
+    category: 'Career Coaching',
+    experience: 1,
+    rating: 4.0,
+    bio: 'Supports freshers with interview prep and career goal setting.',
+    availableSlots: [
+      { date: '2026-03-01', slots: ['08:30 AM', '12:00 PM', '04:30 PM'] },
+      { date: '2026-03-03', slots: ['09:30 AM', '02:00 PM', '06:00 PM'] }
+    ]
   }
 ];
 

@@ -21,7 +21,7 @@ export const getExperts = async (req, res) => {
   }
 
   const [items, total] = await Promise.all([
-    Expert.find(query).sort({ createdAt: -1 }).skip(skip).limit(limit),
+    Expert.find(query).sort({ createdAt: 1 }).skip(skip).limit(limit),
     Expert.countDocuments(query)
   ]);
 

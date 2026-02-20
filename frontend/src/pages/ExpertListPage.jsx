@@ -71,12 +71,12 @@ const ExpertListPage = () => {
         <>
           <div className="grid">
             {experts.map((expert) => (
-              <article className="card" key={expert._id}>
+              <article className="card expert-card" key={expert._id}>
                 <h3>{expert.name}</h3>
                 <p>Category: {expert.category}</p>
                 <p>Experience: {expert.experience} years</p>
                 <p>Rating: {expert.rating} / 5</p>
-                <Link className="btn" to={`/experts/${expert._id}`}>
+                <Link className="btn details-btn" to={`/experts/${expert._id}`}>
                   View Details
                 </Link>
               </article>

@@ -56,7 +56,12 @@ const MyBookingsPage = () => {
               <p>Category: {item.expertId?.category || '-'}</p>
               <p>Date: {item.date}</p>
               <p>Time: {item.timeSlot}</p>
-              <p>Status: {item.status}</p>
+              <p>
+                Status:{' '}
+                <span className={`status-badge status-${item.status.toLowerCase()}`}>
+                  {item.status}
+                </span>
+              </p>
               <p>Booked By: {item.name}</p>
             </article>
           ))}
