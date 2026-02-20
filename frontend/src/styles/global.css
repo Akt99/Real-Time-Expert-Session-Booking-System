@@ -1,0 +1,179 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: #f5f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #f5f7fb 0%, #ecfeff 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #dbeafe;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.controls input,
+.controls select,
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.btn,
+button {
+  background: #0ea5e9;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.secondary {
+  background: #334155;
+  margin-bottom: 0.9rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 600px;
+}
+
+.form label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.state {
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+}
+
+.loading {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.date-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.slot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.slot {
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.slot.free {
+  background: #e0f2fe;
+  color: #0c4a6e;
+}
+
+.slot.booked {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+@media (max-width: 700px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
