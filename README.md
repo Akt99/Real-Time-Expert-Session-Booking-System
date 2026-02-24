@@ -45,7 +45,7 @@ A MERN-stack-backed app with:
 ### How Double Booking Is Prevented (Race Condition Safe)
 - Added a unique compound index on booking slots:
   - `bookingSchema.index({ expertId: 1, date: 1, timeSlot: 1 }, { unique: true });`
-- Why this solves race conditions:
+- Why this solves race conditions (Key Factor):
   - Even if 2 requests hit at the same time, MongoDB allows only one insert for the same `(expertId, date, timeSlot)`.
   - The loser gets duplicate key error `11000`.
 - Controller behavior:
