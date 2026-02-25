@@ -37,7 +37,7 @@ A MERN-stack-backed app with:
 - `PATCH /bookings/:id/status`
 - `GET /bookings?email=`
 
-## Critical Behavior
+## Critical Behavior:
 - Double booking prevention: unique compound index on `(expertId, date, timeSlot)`.
 - Real-time update: Socket.io event `slot_booked` emitted after successful booking.
 - Error handling: validation + meaningful JSON errors.
