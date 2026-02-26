@@ -1,7 +1,7 @@
 # Real-Time Expert Session Booking System
 
 A MERN-stack-backed app with:
-- Expert listing (search, filter, pagination)
+- Expert listing (search-bar, filter, pagination)
 - Expert detail with real-time slot updates
 - Booking form with validation
 - My bookings by email
