@@ -77,7 +77,7 @@ A MERN-stack-backed app with:
 ### Option B: MongoDB Atlas (Cloud)
 1. Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 2. Create DB user and password.
-3. In Network Access, allow your IP (or `0.0.0.0/0` for testing only).
+3. In Network Access, allow your IP (or `0.0.0.0/0` for testing only)
 4. Copy connection string and set in backend `.env`:
    ```env
    MONGODB_URI=mongodb+srv://<user>:<password>@<cluster-url>/expert_booking?retryWrites=true&w=majority
